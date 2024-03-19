@@ -1,11 +1,11 @@
 ---
-title: "Translation Guidance"
-nav_title: Translation Guidance
+title: "Translation Notes"
+nav_title: Translation Notes
 github:
   repository: w3c/wai-about-wai
-  path: '_about/translating/guides/translation-guidance.md'
-permalink: /about/translating/guides/translation-guidance/
-ref: /about/translating/guides/translation-guidance/
+  path: '_about/translating/translation-notes.md'
+permalink: /about/translating/translation-notes/
+ref: /about/translating/translation-notes/
 lang: en
 last_updated: 2023-11-09
 description: Help make the Web accessible to people with disabilities around the world. We appreciate your contributions to translating W3C WAI accessibility resources.
@@ -30,139 +30,184 @@ footer: |
 {% include toc.html type="end" %}
 {:/}
 
-## General guidance
-
-- Do not change or adapt or add to the meaning of the English version in your translation.
-- If you have suggestions for changes to the English version, submit them via GitHub or e-mail using the links in the “Help improve this page” box near the bottom of the page.
-
-## Markdown/Code
-
-Please leave the code, HTML, and markdown as is without changing it.
-
-Make sure to:
-
 {::nomarkdown}
-<ul>
-<li>
-{:/}
-
-Translate titles in the markdown, such as "Summary" in:
-
-{::nomarkdown}
-{% include box.html type="start" %}
-{:/}
-```liquid
-{% raw %}{% include box.html type="start" title="Summary" class="" %}{% endraw %}
-```
-{::nomarkdown}
-{% include box.html type="end" %}
+{% include excol.html type="all" %}
 {:/}
 
 {::nomarkdown}
-</li>
-<li>
+{% include excol.html type="start" id="wcag-glance" %}
+{:/}
+## WCAG 2 at a Glance
+{::nomarkdown}
+{% include excol.html type="middle" %}
 {:/}
 
-Translate image alternative text, such as “mouse crossed out” in:
+Please consider the wording in the WCAG 2.2 success criteria. If there is a translation of WCAG 2 in your language, review it thoughtfully. This text is not the same as the success criteria wording &mdash; it is a paraphrased summary that is intended to be easier to understand and accurate - yet it does not need to be comprehensive.
+
+Please collaborate with others who are familiar with WCAG to refine this wording in your language. Thank you!
 
 {::nomarkdown}
-{% include box.html type="start" %}
-{:/}
-
-- in Markdown: `![mouse crossed out](https://www.w3.org/WAI/intro/no-mouse.png)`
-- in HTML: `<img src="https://www.w3.org/WAI/intro/no-mouse.png" alt="mouse crossed out" />`
-
-{::nomarkdown}
-{% include box.html type="end" %}
+{% include excol.html type="end" %}
 {:/}
 
 {::nomarkdown}
-</li>
-<li>
+{% include excol.html type="start" id="people-use-web" %}
+{:/}
+## How People with Disabilities Use the Web
+{::nomarkdown}
+{% include excol.html type="middle" %}
 {:/}
 
-Make sure that the quote marks stay as is, and are not converted to "smart quotes" by word processing software.
+The title "How People with Disabilities Use the Web" is a statement. The title is **not a question**. For translation, it might help to think of the title "How People with Disabilities Use the Web" as **a shorter version of** "An Introduction to How People with Disabilities Use the Web" or "Description of How People with Disabilities Use the Web".
 
 {::nomarkdown}
-</li>
-</ul>
+{% include excol.html type="end" %}
 {:/}
 
-### Links
 
-Most links are formatted with single or double brackets and parentheses; for example:
 
 {::nomarkdown}
-{% include box.html type="start" %}
+{% include excol.html type="start" id="perspective-videos" %}
 {:/}
+## Web Accessibility Perspectives Videos
+{::nomarkdown}
+{% include excol.html type="middle" %}
+{:/}
+
+### Changelog/Acknowledgements
+
+Do not translate `changelog.md` and `acknowledgements.md`.
+
+### Links with images in index page
+
+In `index.[lang].md`: add the language shortcode of your translation at the end of the URLs listed in "Perspectives Videos"
+
+Example (French translation):
 ```markdown
-[Text that is linked]({%raw%}/{%endraw%}path/to/filename/)
-[[Title of WAI Page]]({%raw%}/{%endraw%}path/to/filename/)
+- [![](img/thumbnails/keyboard.jpg)<br>Compatibilité avec le clavier]({{ "/perspective-videos/keyboard/fr" | relative_url }})
 ```
-{::nomarkdown}
-{% include box.html type="end" %}
-{:/}
 
-Just so you know:
-- When we want the system to use the title of the linked-to page as link text, we use `[[double brackets]]`. 
-  - That way, when the linked-to page is translated, the system will use the translated page's title.
-  - If the linked-to page is not translated, the system will use your translated text between the brackets, and add `(in English)` in the translated language at the end of the link.
-- When we want to use custom link text, we use `[single brackets]`.
+### Subtitles & descriptions
 
-Make sure to:
-- Keep brackets and parentheses together, with no space between the closing `]` and the opening `(`.
-- Keep double `[[` or single brackets `[` as they are.
-- Translate the text in the links, including document titles.
-- Do not manually add `(in English)`, even for external links.
-
-## Text Editor
-
-The markdown files are very sensitive to indentation, commas, quotes, and special characters. 
-
-We recommend that you use a markdown editor or a simple text editor (including GitHub interface) — and not a document editor like Microsoft Word that often changes quotes and indentation.
-
-## Glossaries
-
-- Read the [General Translation Glossary {% include_cached external.html %}](https://github.com/w3c/translation-glossaries/blob/main/general.md).
-- See if there is a [glossary for your language {% include_cached external.html %}](https://github.com/w3c/translation-glossaries#readme).
-
-## Resource-Specific Information
-
-Some resources have specific Translations notes. 
+Follow [Translating Video Subtitles and Descriptions](/translating/guides/video-subtitles/) guidance.
 
 {::nomarkdown}
-<ul>
-<li>
+{% include excol.html type="end" %}
 {:/}
 
-At the top of the resource file (in the ["front matter" metadata](/about/translating/guides/new-translation/#frontmatter)), see if there is a comment like this one:
 
 {::nomarkdown}
-{% include box.html type="start" %}
+{% include excol.html type="start" id="standards-overview" %}
 {:/}
+## Standards Overview
+{::nomarkdown}
+{% include excol.html type="middle" %}
+{:/}
+
+
+### Links to WCAG standards
+
+The page contains links to WCAG 2.0, 2.1 and 2.2.
+
+If an Authorized Translation of a WCAG standard has been published in your language, please point to the translated version.
+
+Example:
+
 ```
-# Read Translations Notes at https://github.com/w3c/path-to-repository#readme
+- [Le standard WCAG 2.0](https://www.w3.org/Translations/WCAG20-fr/)
+- [Le standard WCAG 2.1](https://www.w3.org/Translations/WCAG21-fr/)
 ```
+
+If not, translate the link text but keep the link to the English version.
+
+Example:
+
+```
+- [Le standard WCAG 2.2](https://www.w3.org/TR/WCAG22//)
+```
+
+### [Image at the bottom](https://www.w3.org/WAI/content-images/wai-std-gl-overview/specs.png)
+
+For now, it is OK to leave the image in English. (It only illustrates the information above, and does not provided substantial additional information.) We are working on an SVG version of that image, with support for translation. We will update this section and notify existing translators when it is ready.
+
 {::nomarkdown}
-{% include box.html type="end" %}
+{% include excol.html type="end" %}
 {:/}
 
-In that case, follow the link and read the specific guidance.
-
 {::nomarkdown}
-</li>
-<li>
+{% include excol.html type="start" id="tutorials" %}
+{:/}
+## Tutorials
+{::nomarkdown}
+{% include excol.html type="middle" %}
 {:/}
 
-If you wish to translate the [WCAG-EM Report Tool](https://www.w3.org/WAI/eval/report-tool/), please read [this specific guidance {% include_cached external.html %}](https://github.com/w3c/wai-wcag-em-report-tool/wiki/How-to-add-a-language), as different steps have to be followed.
+Tutorials resources use a dynamic footer, using specific metadata set in the "front matter" of each page.
+
+Example:
+```yaml
+metafooter: true
+editors:
+  - Eric Eggert: "https://www.w3.org/People/yatil/"
+  - Shadi Abou-Zahra: "https://www.w3.org/People/shadi/"
+update_editors:
+  - Brian Elton
+contributing_participants:
+  - see <a href="/WAI/tutorials/acknowledgements/">Acknowledgements</a>
+support: Developed by the Education and Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg">EOWG</a>). Developed with support from the <a href="https://www.w3.org/WAI/ACT/">WAI-ACT project</a>, co-funded by the <strong>European Commission <abbr title="Information Society Technologies">IST</abbr> Programme</strong>.
+```
+
+1. Translate content in `editors`, `update_editors`, `contributing_participants` and `support`.\
+   Note: Translate the Working Group name and leave the Working Group acronym in English.
+2. Add translations for the following terms, used by the footer, in [translations.yml file](https://github.com/w3c/wai-website-data/blob/master/translations.yml) located in [wai-website-data repository](https://github.com/w3c/wai-website-data/):
+- "Editors:"
+- "Update Editor:"
+- "Status"
+- "Updated"
+- "first published"
 
 {::nomarkdown}
-</li>
-</ul>
+{% include excol.html type="end" %}
 {:/}
 
-## We are here to help
 
-If you have any questions about the translation, please report them in the related GitHub issue so that WAI team and other volunteers can help. Alternatively, send an e-mail to the publicly-archived [public-wai-translations@w3.org](mailto:public-wai-translations@w3.org) mailing-list.
+{::nomarkdown}
+{% include excol.html type="start" id="video-introduction" %}
+{:/}
+## Video Introduction to Web Accessibility and W3C Standards
+{::nomarkdown}
+{% include excol.html type="middle" %}
+{:/}
 
-We are happy to help you decide on the best translated wording by sharing the considerations and nuances that went into choosing the wording for the English page.
+1. Check if the [player is available in your translated language](https://github.com/ableplayer/ableplayer/blob/master/README.md#user-content-supported-languages).
+
+2. Translate the "Translations" section of the page accordingly:
+
+* **If the player _is_ available in the translated language**:
+  * Translate the following words from the video player interface:
+    * "Captions"
+    * "Show transcript"
+    * "Language"
+  * Please also update the image per the instructions below.<br>_If you are not able to update the image, let us know._
+    * Make a new image to replace [show-language.png](https://www.w3.org/WAI/content-images/wai-video-standards-and-benefits/show-language.png). The circle is 7px #eed009 / rgb(238,208,9).
+    * Name it `show-language.[language shortcode].png`\
+      For example: `show-language.fr.png`
+    * Upload it to the [content-images folder](https://github.com/w3c/wai-video-standards-and-benefits/tree/master/content-images/wai-video-standards-and-benefits)
+      * Select "Upload files"
+      * Drag or choose the file
+      * Select "Commit changes"
+    * In your translation, add the language shortcode to the image path.
+* **If the player is _not_ available in the translated language**:
+  * Do not translate the following words from the video player interface; leave them in English:
+    * "Captions"
+    * "Show transcript"
+    * "Language"
+  * Mark up the English words with the lang attribute:\
+    `<span lang="en">Captions</span>`.
+
+{::nomarkdown}
+{% include excol.html type="end" %}
+{:/}
+
+
+
